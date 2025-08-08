@@ -1,0 +1,1 @@
+this is a simple calculator which focuses on primary functions and allows the user to enter n number of elements for addition, subtraction, multiplication. This also powers power functions along with square root as well as cube root facilites with clear and exit buttons
