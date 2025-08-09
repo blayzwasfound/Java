@@ -75,12 +75,14 @@ public class Calculator//declaring public class
                     if(c=='y'||c=='Y')
                     {
                         System.out.println("enter divisor");//printing statement
-                        double d = sc.nextDouble();//accepting the divisor
-                        result=result/d;//finding the result
-                        if(d==0)
+                        double ds = sc.nextDouble();//accepting the divisor
+                        if(ds==0)
                             System.out.println("Undefined");//printing statement
                         else
+                        {
+                            result=result/ds;//finding the result
                             System.out.println("Result: "+result);//printing statement
+                        }
                     }
                     else if(c=='n'||c=='N')
                     {
@@ -88,11 +90,16 @@ public class Calculator//declaring public class
                         double d = sc.nextDouble();//accepting the dividend
                         System.out.println("enter divisor");//printing statement
                         double ds = sc.nextDouble();//accepting the divisor
-                        result = d/ds;//calculating the division
-                        if(d==0)
+                        if(ds==0)
+                        {
                             System.out.println("Undefined");//printing statement
+                        }
+                        
                         else
+                        {
+                            result = d/ds;//calculating the division
                             System.out.println("Result: "+result);//printing statement
+                        }
                     }
                     else
                         System.out.println("Wrong option!");
