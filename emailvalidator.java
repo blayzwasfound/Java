@@ -6,7 +6,7 @@ public class emailvalidator
         Scanner sc = new Scanner(System.in);//scanner object
         System.out.println("Enter an email id to check");
         String email = sc.next();//accepting the input
-        Pattern pattern = Pattern.compile("@+[a-z]");//making a pattern
+        Pattern pattern = Pattern.compile("[a-z]+@+[a-z]");//making a pattern
         Pattern pattern2 = Pattern.compile(".+[a-z]");//making another pattern
         Matcher matcher = pattern.matcher(email);//match condition 1
         Matcher matcher2 = pattern2.matcher(email);//match condition 2
